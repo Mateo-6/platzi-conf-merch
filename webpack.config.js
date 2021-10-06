@@ -51,12 +51,12 @@ module.exports = {
       filename: 'assets/[name].css',
     }),
     new Dotenv(),
-    new webpack.DefinePlugin({
+    /* new webpack.DefinePlugin({
       'process.env': {
         CLIENT_ID: JSON.stringify(process.env.CLIENT_ID),
         GOOGLE_MAP_API_KEY: JSON.stringify(process.env.GOOGLE_MAP_API_KEY),
       },
-    }),
+    }), */
   ],
   devServer: {
     static: path.join(__dirname, 'dist'),
@@ -66,3 +66,11 @@ module.exports = {
     historyApiFallback: true
   },
 };
+
+/* new Dotenv({
+  path: './.env',
+  safe: true,
+  systemvars: true,
+  defaults: false,
+}), */
+

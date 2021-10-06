@@ -1,7 +1,7 @@
 export default {
     cart: [],
     buyer: [
-        {address: 'Calle 120 Q'}
+        {address: 'Calle120Q'}
     ],
     orders: [],
     products: [
